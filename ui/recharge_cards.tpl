@@ -222,8 +222,8 @@
                             <label class="col-md-2 control-label">{Lang::T('Enable Recharge')}</label>
                             <div class="col-md-6">
                                 <label class="switch">
-                                    <input type="checkbox" id="recharge_cards_mode" value="1"
-                                        name="recharge_cards_mode" {if $_c['recharge_cards_mode']==1}checked{/if}>
+                                    <input type="checkbox" id="recharge_cards_mode" value="1" name="recharge_cards_mode"
+                                        {if $_c['recharge_cards_mode']==1}checked{/if}>
                                     <span class="slider"></span>
                                 </label>
                             </div>
@@ -277,7 +277,7 @@
                             </p>
                         </div>
                         <div class="form-group" id="">
-                            <label class="col-md-2 control-label">{Lang::T('Recharge  Send Template')}</label>
+                            <label class="col-md-2 control-label">{Lang::T('Recharge Send Template')}</label>
                             <div class="col-md-6">
                                 <textarea rows="8" name="recharge_send" id="recharge_send"
                                     class="form-control">{Lang::htmlspecialchars($_json[''])}</textarea>
@@ -595,6 +595,11 @@
     });
 </script>
 
-
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        var portalLink = "https://github.com/focuslinkstech";
+        $('#version').html('Recharge Cards Plugin | Ver: 1.0 | by: <a href="' + portalLink + '">Focuslinks Tech</a>');
+    });
+</script>
 
 {include file="sections/footer.tpl"}
