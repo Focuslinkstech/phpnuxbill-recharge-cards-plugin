@@ -1,6 +1,6 @@
 <?php
 
-register_menu("Recharge Cards", true, "recharge_cards", 'SERVICES', '', '', "");
+register_menu("Recharge Cards", true, "recharge_cards", 'CARDS', '', '', "");
 register_menu("Recharge", false, "recharge_cardsClient", 'AFTER_INBOX', 'ion ion-card', '', "");
 
 
